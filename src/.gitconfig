@@ -1,0 +1,17 @@
+[user]
+    email = contact@cordea.jp
+    name = Yoshihiro Tanaka
+[core]
+    precomposeunicode = true
+    autoCRLF = input
+[push]
+    default = matching
+[alias]
+    l = log --pretty=full --name-status
+    s = status
+    d = diff
+    d1 = diff HEAD^..HEAD
+    d2 = diff HEAD~2..HEAD
+    ds = diff --staged
+[init]
+    templatedir = $HOME/.git_hooks/
