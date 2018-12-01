@@ -41,3 +41,5 @@ case "$TERM" in
     PROMPT='t> '
     ;;
 esac
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
