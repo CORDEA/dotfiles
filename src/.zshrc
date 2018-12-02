@@ -14,6 +14,9 @@ setopt hist_ignore_space
 setopt auto_cd
 setopt interactive_comments
 
+autoload -U compinit
+compinit
+
 function git(){hub "$@"}
 
 function precmd_console() {
