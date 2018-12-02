@@ -1,3 +1,4 @@
+alias ls='ls -G'
 alias top='top -o cpu'
 alias watch='watch --color'
 
