@@ -13,5 +13,3 @@
     d1 = diff HEAD^..HEAD
     d2 = diff HEAD~2..HEAD
     ds = diff --staged
-[init]
-    templatedir = $HOME/.git_hooks/
