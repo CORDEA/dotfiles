@@ -18,7 +18,7 @@ setopt interactive_comments
 autoload -U compinit
 compinit
 
-function git(){hub "$@"}
+[ -n "$(command -v hub)" ] && function git(){hub "$@"}
 
 function precmd_console() {
     head="(*'-') < "
