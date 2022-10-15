@@ -22,10 +22,6 @@ compinit
 
 function precmd_console() {
     head="(*'-') < "
-    print -Pn "\e[38;5;245m"
-    runner puts --config /usr/local/bin/decor/config.json --prefix "$head"
-    print -Pn "\e[0m"
-
     line=`git log -1 --pretty="%s - %an/%cn" 2> /dev/null`
     branch="\e[95m[`git rev-parse --abbrev-ref HEAD 2> /dev/null `]\e[0m"
     if [[ $line != "" ]]; then
