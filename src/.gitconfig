@@ -14,3 +14,5 @@
     d2 = diff HEAD~2..HEAD
     ds = diff --staged
     do = diff 4b825dc642cb6eb9a060e54bf8d69288fbee4904..HEAD
+[pull]
+    rebase = false
